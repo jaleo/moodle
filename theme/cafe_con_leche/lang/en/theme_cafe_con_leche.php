@@ -28,11 +28,11 @@
  * Back homepage icon from: Shaun Daubney's Aardvark theme <http://moodle.org/mod/data/view.php?d=26&rid=3934>
  */
 
-$string['pluginname'] = 'Coffee with milk';
+$string['pluginname'] = 'Coffee with Milk';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
-$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>Caf&eacute; con leche</h2><img src="cafe_con_leche/pix/screenshot.png" alt="Caf&eacute; con leche screenshot" /><h3>Theme Discussion Forum:</h3><p><a href="http://moodle.org/mod/forum/view.php?id=46">http://moodle.org/mod/forum/view.php?id=46</a></p><h3>Theme Credits</h3><p><a href="http://docs.moodle.org/en/Theme_credits">http://docs.moodle.org/en/Theme_credits</a></p><h3>Theme Documentation:</h3><p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a></p><h3>Report a bug:</h3><p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p></div><div class="theme_description"><h2>About</h2><p>Decaf is a three-column, fluid-width theme for Moodle that was created by <a href="http://moodle.org/user/view.php?id=390408">Lei Zhang</a>. It improves usability by shifting setting blocks to top of the page, so called "Moodle awesome bar". For developers, It transfers the performance info into a colorful floated bar at bottom of the page, which brings the performance awareness as well as improves usability.  
-This them has been modified by Jose Alejandro Mor&aacute;n P&eacute;rez.
+$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>Caf&eacute; con leche</h2><img src="cafe_con_leche/pix/screenshot.png" alt="Caf&eacute; con leche screenshot" /><h3>Theme Discussion Forum:</h3><p><a href="http://moodle.org/mod/forum/view.php?id=46">http://moodle.org/mod/forum/view.php?id=46</a></p><h3>Theme Credits</h3><p><a href="http://docs.moodle.org/en/Theme_credits">http://docs.moodle.org/en/Theme_credits</a></p><h3>Theme Documentation:</h3><p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a> or <a href="https://sites.google.com/site/josealejandromoranperez/cafe-con-leche">Theme specific documentation</a>.</p><h3>Report a bug:</h3><p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p></div><div class="theme_description"><h2>About</h2><p>Decaf is a three-column, fluid-width theme for Moodle that was created by <a href="http://moodle.org/user/view.php?id=390408">Lei Zhang</a>. It improves usability by shifting setting blocks to top of the page, so called "Moodle awesome bar". For developers, It transfers the performance info into a colorful floated bar at bottom of the page, which brings the performance awareness as well as improves usability.  
+This them has been modified by <a href="http://moodle.org/user/view.php?id=405824">Jose Alejandro Mor&aacute;n P&eacute;rez</a>. Default colors are lighter and them is more customizable.
 </p>';
 $string['searchsettings'] = 'Search settings...';
 
@@ -46,7 +46,7 @@ $string['cabecerabackgroundcolordesc'] = 'Header\'s background colour. Only visi
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Any CSS you enter here will be added to every page allowing your to easily customise this theme.';
 $string['favicon'] = 'Favicon';
-$string['favicon_desc'] = 'The favicon on the tiny image that shows the browser next to the title of the web. Identifies the website navigated. This abbreviation stands for "Favorit icon". "In order to be correctly configured should be introduced as an image called favicon.ico with 16x16 pixels.';
+$string['favicon_desc'] = 'The favicon on the tiny image that shows the browser next to the title of the web. Identifies the website navigated. This abbreviation stands for "Favorit icon". "In order to be correctly configured should be introduced as an image called favicon.ico with 16x16 pixels. Note: The  Moodle files control do not previews ico files correctly. It remplaces them with a generic image. This is right.';
 $string['fondo_cabecera'] = 'Header background';
 $string['fondo_cabecera_desc'] = 'Background image for the header.';
 $string['footnote'] = 'Footnote';

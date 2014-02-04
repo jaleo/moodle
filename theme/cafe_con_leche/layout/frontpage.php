@@ -131,7 +131,7 @@ if (empty($PAGE->layout_options['noawesomebar'])) {  ?>
 		if (!empty($PAGE->theme->settings->fondo_cabecera)) {
 			$theme = theme_config::load('cafe_con_leche');
 			$fondourl = $PAGE->theme->setting_file_url('fondo_cabecera', 'fondo_cabecera');
-			echo "<div id=\"page-header\" style='background: url(".$fondourl.");background-size: 100% 100%;' class=\"clearfix\">";
+			echo "<div id=\"page-header\" style='background-image: url(".$fondourl.");background-size: 100% 100%;' class=\"clearfix\">";
 		} else {
 			echo "<div id=\"page-header\" class=\"clearfix\">";
 		}
