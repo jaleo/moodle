@@ -272,7 +272,7 @@ function cafe_con_leche_require_login($courseorid = NULL, $autologinguest = true
     }
 
     // loginas as redirection if needed
-    if ($course->id != SITEID and session_is_loggedinas()) {
+    if ($course->id != SITEID and \core\session\manager::is_loggedinas()) {
         if ($USER->loginascontext->contextlevel == CONTEXT_COURSE) {
             if ($USER->loginascontext->instanceid != $course->id) {
                 print_error('loginasonecourse', '', $CFG->wwwroot.'/course/view.php?id='.$USER->loginascontext->instanceid);
@@ -281,7 +281,7 @@ function cafe_con_leche_require_login($courseorid = NULL, $autologinguest = true
     }
 
     // check whether the user should be changing password (but only if it is REALLY them)
-    if (get_user_preferences('auth_forcepasswordchange') && !session_is_loggedinas()) {
+    if (get_user_preferences('auth_forcepasswordchange') && !\core\session\manager::is_loggedinas()) {
         $userauth = get_auth_plugin($USER->auth);
         if ($userauth->can_change_password() and !$preventredirect) {
             $SESSION->wantsurl = $FULLME;
@@ -352,7 +352,7 @@ function cafe_con_leche_require_login($courseorid = NULL, $autologinguest = true
         // everybody is enrolled on the frontpage
 
     } else {
-        if (session_is_loggedinas()) {
+        if (\core\session\manager::is_loggedinas()) {
             // Make sure the REAL person can access this course first
             $realuser = session_get_realuser();
             if (!is_enrolled($coursecontext, $realuser->id, '', true) and !is_viewing($coursecontext, $realuser->id) and !is_siteadmin($realuser->id)) {

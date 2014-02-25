@@ -124,7 +124,7 @@ if (empty($PAGE->layout_options['noawesomebar'])) { ?>
     <div id="awesomebar" class="cafe_con_leche-awesome-bar">
         <?php
             if( $this->page->pagelayout != 'maintenance' // Don't show awesomebar if site is being upgraded
-                && !(get_user_preferences('auth_forcepasswordchange') && !session_is_loggedinas()) // Don't show it when forcibly changing password either
+                && !(get_user_preferences('auth_forcepasswordchange') && !\core\session\manager::is_loggedinas()) // Don't show it when forcibly changing password either
               ) {
                 echo $awesome_nav;
                 if ($hascustommenu && !empty($PAGE->theme->settings->custommenuinawesomebar) && empty($PAGE->theme->settings->custommenuafterawesomebar)) {

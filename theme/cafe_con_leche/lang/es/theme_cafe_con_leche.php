@@ -36,6 +36,11 @@
  * - Modificaciones en los estilos de la cabecera
  * - Traducción al español.
  * - Iconos adicionales del tema Rocket.
+ * 
+ * ************************************************************************************************************************************
+ * NOTA: Si se hacen modifiaciones en estas cadenas deberían subirse al sistema de traducción de Moodle AMOS: http://lang.moodle.org/ *
+ * Si no se sabe como hacerlo, al menos notifíque los cambios a Jose Alejandro Morán Pérez jamorpARROBAunileon.es                     *
+ * ************************************************************************************************************************************
  */
 
 $string['pluginname'] = 'Caf&eacute; con leche';
