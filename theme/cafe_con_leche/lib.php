@@ -492,6 +492,8 @@ class cafe_con_leche_expand_navigation extends global_navigation {
     // Added in 2.6, so we need to specify it here so that earlier versions don't complain.
     /** @var int site admin branch node type, used only within settings nav 71 */
     const TYPE_SITE_ADMIN = 71;
+    /** var int Category displayed in MyHome navigation node */
+    const TYPE_MY_CATEGORY = 11;
 
     /**
      * Constructs the navigation for use in AJAX request
@@ -571,6 +573,7 @@ class cafe_con_leche_expand_navigation extends global_navigation {
                 }
                 break;
             case self::TYPE_CATEGORY :
+            case self::TYPE_MY_CATEGORY :
                 if (!empty($PAGE->theme->settings->coursesleafonly)) {
                     return false;
                 }
@@ -848,6 +851,9 @@ class cafe_con_leche_expand_navigation extends global_navigation {
             $coursetype = self::COURSE_CURRENT;
         }
         if ($this->expandtocourses || $coursetype == self::COURSE_MY || $coursetype == self::COURSE_CURRENT) {
+            if ($coursenode = $this->find($course->id, self::TYPE_COURSE)) {
+                return $coursenode;
+            }
             return parent::add_course($course, $forcegeneric, $coursetype);
         }
         return false;

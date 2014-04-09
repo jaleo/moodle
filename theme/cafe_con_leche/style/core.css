@@ -30,9 +30,10 @@ a:active {outline: none;}
 	text-decoration:none;
 	text-transform:none;
 	text-shadow:1px 1px 0 #FFFFFF, -1px 1px 0 rgba(255, 255, 255, 0.5), 1px -1px 0 rgba(255, 255, 255, 0.5), -1px -1px 0 rgba(255, 255, 255, 0.5);
-	margin:0.9em 20px 0.9em 0px;}
+	margin:0.9em 20px 0.9em 0px;
+}
 #page-header .headermenu {
-width:235px;
+width:250px;
 height:105px;
 background-image: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,255,0.40) 5%,rgba(255,255,255,0.6) 10%,rgba(255,255,255,0.90) 72%);}
 #page-header .headermenu a:hover{color:#C30;}
@@ -40,13 +41,21 @@ background-image: linear-gradient(to right,rgba(255,255,255,0) 0%,rgba(255,255,2
 /* Logo
 -------------------------- */
 /* .logo{float: left;  margin-right: 1rem; margin-top: 3px; max-width: 50%;} */
-.titulo{float:left;}
+.titulo{
+    float:left;
+    max-height: 105px;
+    max-width: -webkit-calc(98% - 250px - 100px);
+    max-width: -moz-calc(98% - 250px - 100px);
+    max-width: calc(98% - 250px - 100px);
+    overflow: auto;
+}
 .logo {
     background: url([[setting:logotipo]]) no-repeat 0 0;
-    max-width: 50%;
+    /*max-width: 50%;*/
+    max-width: 100px;
     height: 100px;
     margin: 0;
-	margin-right: 1rem;
+    margin-right: 1rem;
     float: left;
     position: relative;
 }
@@ -135,10 +144,10 @@ ul.section li.label {padding-bottom:5px !important;}
 .course-content .section .activity .availabilityinfo,
 .course-content .section .activity .contentafterlink {margin-left:26px;margin-top:0;}
 ul.section .activity .contentafterlink p {margin:0 0 1em;}
-body.editing ul.section>li {border-bottom: 1px dashed #808080; position:relative;}
+body.editing ul.section>li {border-bottom: 1px dashed #808080;}
 input[type=submit] {background:-webkit-gradient(linear,0% 40%,0% 70%,from(#F9F9F9),to(#E3E3E3));margin: 0 8px 0 0;padding: 2px 8px;text-align: center;vertical-align: middle;white-space: nowrap;cursor: default;outline: none;font-family: arial,sans-serif;color: black;border: 1px solid #BBB;border-radius: 3px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-top-color: #CCC;border-bottom-color: #A0A0A0;}
 /* Make 2.3 activity chooser sit on top of modules in sections */
-div.moodle-dialogue-base {position:absolute;top:0;left:0;right:0;z-index:1500;}
+div.moodle-dialogue-base {position:absolute;top:0;left:0;right:0;}
 
 /* Blocks
 --------------------------- */
@@ -172,7 +181,7 @@ div.moodle-dialogue-base {position:absolute;top:0;left:0;right:0;z-index:1500;}
 .cafe_con_leche_persistent_edit.path-course .navbar .navbutton {display:none;}
 .cafe_con_leche_with_edit_buttons.jsenabled .sitetopic .section .activity .activityinstance,
 .cafe_con_leche_with_edit_buttons.jsenabled .course-content .section .activity .activityinstance {padding-right:1.5em;}
-.cafe_con_leche_with_edit_buttons.jsenabled .cafe_con_leche-editbutton-wrap {position:relative;width:auto;display:inline;z-index:3;}
+.cafe_con_leche_with_edit_buttons.jsenabled .cafe_con_leche-editbutton-wrap {position:relative;width:auto;display:inline;}
 .dockeditempanel_hd .cafe_con_leche-editbutton-wrap {float:right;}
 .dockeditempanel_hd .cafe_con_leche-editbutton-wrap .hidepanelicon {margin-right:4px;}
 .cafe_con_leche_with_edit_buttons.jsenabled.editing ul.section>li {z-index:3;}
@@ -347,6 +356,7 @@ body#page-question-category.cafe_con_leche_with_edit_buttons.jsenabled div.box.q
 .cafe_con_leche_modchooser_tiles .choosercontainer #chooseform .options .option .modicon img.icon {padding:0;}
 .cafe_con_leche_modchooser_tiles .choosercontainer #chooseform .options .option .typename {padding:0;font-size:90%;line-height:1;}
 .cafe_con_leche_modchooser_tiles .moodle-dialogue-base .moodle-dialogue.chooserdialogue .moodle-dialogue-bd .option label {line-height:1;}
+
 #centrador{
 	vertical-align: middle;
 	display: table-cell;

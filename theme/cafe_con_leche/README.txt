@@ -28,6 +28,19 @@ ES: Se le han añadido algunas cosas:
  * - Traducción al español.
  * - Iconos adicionales del tema Rocket.
 
+Versión 1.0.1:
+
+EN:
+Adjustments in the header title to improve stability with very long titles. Logo max-width limited to 100px.
+Synchronized with Decaf 1.9.0 RC5 (2013112504).
+IMPORTANT BUG FIX: All previous versions have a bug in the image insertion. This comes from Decaf. It has been corrected in the current version of Decaf. This version has been synchronized with it.
+
+ES:
+Ajustes en la cabecera para mejorar la estabilidad con títulos muy largos. Ancho máximo del logo limitado al 100px.
+Sincronizado con la versión 1.9.0 RC5 (2013112504) de Decaf.
+CORRECCIÓN DE UN FALLO IMPORTANTE: Todas las versiones anteriores tienen un fallo en la inserción de imágenes. Este fallo ha sido arrastrado desde Decaf, pero ha sido corregido en la versión actual. Esta versión se ha sincronizado con ella.
+
+
 Versión 1:
 
 EN:
