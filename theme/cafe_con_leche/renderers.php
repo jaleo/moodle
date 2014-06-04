@@ -270,7 +270,14 @@ class theme_cafe_con_leche_topsettings_renderer extends plugin_renderer_base {
         $content .= html_writer::start_tag('span', array('id' =>'awesomeNavMenu'));
         $content .= html_writer::empty_tag('img', array('alt' => '', 'src' =>$this->pix_url('user_silhouette', 'theme')));
         $content .= html_writer::end_tag('span');
-        $content .= $this->navigation_node($navigation, array());
+        $content .= html_writer::end_tag('span');
+            //echo $CFG->version." -> ". $CFG->release;
+            if($CFG->version > 2013051404) { //Para versiones superiores a la 2.5
+                $navegacion = $this->navigation_node($navigation, array());//TODO averiguar para qué sirve esto.
+            } else{ //Esto evita un fallo muy grave en la versión 2.5 cauando se activa la automatriculación.
+                //echo "la versión no permite incluir la navegación";
+            }
+        $content .= $navegacion;
         $content .= html_writer::end_tag('li');
         $content .= html_writer::end_tag('ul');
         return $content;

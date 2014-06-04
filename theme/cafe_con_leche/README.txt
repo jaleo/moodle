@@ -28,6 +28,16 @@ ES: Se le han añadido algunas cosas:
  * - Traducción al español.
  * - Iconos adicionales del tema Rocket.
 
+Versión 1.0.2:
+
+EN:
+Workaround to an error with self matriculation in Moodle version 2.5.
+It has been installed in de 2.7 version. It works correctly. Is not responsive.
+
+ES:
+Evita un bloqueo cuando se activa la auto-matriculación en la versión 2.5 de Mooodle.
+Ha sido probado en la versión 2.7 y se puede utilizar. No responde al tamaño de las pantallas.
+
 Versión 1.0.1:
 
 EN:
